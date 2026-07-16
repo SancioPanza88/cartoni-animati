@@ -18,11 +18,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Install Gradle 8.5
+      - name: Install Gradle 8.9
         run: |
-          wget -q https://services.gradle.org/distributions/gradle-8.5-bin.zip -O /tmp/gradle.zip
+          wget -q https://services.gradle.org/distributions/gradle-8.9-bin.zip -O /tmp/gradle.zip
           sudo unzip -q /tmp/gradle.zip -d /opt/
-          echo "/opt/gradle-8.5/bin" >> $GITHUB_PATH
+          echo "/opt/gradle-8.9/bin" >> $GITHUB_PATH
 
       - name: Make gradlew executable
         run: chmod +x ./gradlew
