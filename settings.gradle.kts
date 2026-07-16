@@ -13,3 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "CartoniAnimati"
+include(":app")
